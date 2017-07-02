@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  
+    <link href="../BootStrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" 
+            rel="stylesheet" />
+
+       
+    <link href="restaurantStyles.css" 
+	      rel="stylesheet" 
+	      type="text/css" />
+
+    <style>
+        label, p {
+            display: inline-block;
+            width: 575px;
+            text-align: right;
+        }
+        textarea {
+            vertical-align: top;
+        }
+        div {
+            margin-left: 25px;
+        }
+        select {
+                border:1px solid;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                padding:2px;
+        }
+    </style>
+
+    <head>
+        <title>V5 Contact Us - Chauncey Creek Lobster Pier</title>
+
+        <h1>Chauncey Creek Lobster Pier - Established in 1948</h1>
+
+        <!--
+        <hr/>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contactUs.html">Contact Us</a>
+        <hr/>
+        -->
+
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li><a href="index.html" class="glyphicon glyphicon-home"></a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="active"><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+            <br/>
+        </div>
+    </head>
+    
+    <body>
+        <form action="#" method="post">
+            <div class="required">       
+                <label id="fullNameLabel" for="fullName">Name: </label>
+                <input id="fullName" name="fullName" type="text" />
+            </div>
+            <br/>
+
+            <div class="required">
+                <label id="emailLabel" for="email">Email: </label>
+                <input id="email" name="email" type="text" />
+            </div>
+            <br/>
+            
+            <div class="required">
+                <label id="phoneLabel" for="phone">Phone: </label>
+                <input id="phone" name="phone" type="text" />
+            </div>
+            <br/>
+
+            <div class="required">
+                <label id="reasonLabel" for="Reason">Reason for Inquiry</label>
+                <select name="Reason">
+                    <option value="Cetering">Catering</option>
+                    <option value="Private Party">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <br/>
+
+            <div>
+                <label id="addlInfoLabel" for="addlInfo">Additional Information: </label>
+                <textarea name="addlInfo"></textarea><br/>
+            </div>
+            <br/>
+
+            <div class="required">
+                <label id="radioLabel" for="returnCustomer">Have you been to the restaurant?</label>
+                <input type="radio" name="returnCustomer" value="No" checked/>No
+                <input type="radio" name="returnCustomer" value="Yes"       />Yes
+            </div>
+            <br/>
+
+            <div class="required">
+                <label id="checkboxLabel" for="contactDays">Best days to contact you: </label>
+                <input type="checkbox" name="contactDays" value="M"/>M
+                <input type="checkbox" name="contactDays" value="T"/>T
+                <input type="checkbox" name="contactDays" value="W"/>W
+                <input type="checkbox" name="contactDays" value="Th"/>Th
+                <input type="checkbox" name="contactDays" value="F"/>F
+            </div>
+            <br/>
+
+            <div>
+                <center>
+                <input type="submit" id="submitButton" value="Send Request" /><br/>
+                </center>
+            </div>
+            <br/>
+            
+        </form>
+    </body>
+
+    <footer>
+        <hr/>
+            Lobster Trap Road, Kittery Point, Maine 03905<br/>
+            (207) 123-4567 
+        <hr/>
+    </footer>
+</html>
