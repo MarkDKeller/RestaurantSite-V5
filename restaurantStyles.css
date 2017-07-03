@@ -64,3 +64,7 @@ a:active {
 #colorFuchsia {
     background-color: fuchsia
 }
+
+div {
+    align-content: center;
+}

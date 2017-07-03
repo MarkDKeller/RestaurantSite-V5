@@ -35,15 +35,13 @@
         <title>V5 Contact Us - Chauncey Creek Lobster Pier</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-        <h1>Chauncey Creek Lobster Pier - Established in 1948</h1>
-
-        <!--
-        <hr/>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="contactUs.html">Contact Us</a>
-        <hr/>
-        -->
+        <div class="page-header">
+  	        <div class="container">
+  		        <div class="row-fluid">
+                    <h1>Chauncey Creek Lobster Pier - Established in 1948</h1>
+      	        </div>
+  	        </div>
+        </div>
 
         <div class="container">
             <ul class="nav nav-tabs">
@@ -56,40 +54,47 @@
     </head>
     
     <body>
+        <div class="container center_div">
         <form action="#" method="post">
-            <div class="required">       
-                <label id="fullNameLabel" for="fullName">Name: </label>
-                <input id="fullName" name="fullName" type="text" />
+         
+            <div class="input-group col-lg-4 col-lg-offset-4">
+                <span class="input-group-addon">Name:</span>
+                <input id="fullName" type="text" class="form-control" name="fullName" placeholder="Enter Full Name">
             </div>
+
             <br/>
 
-            <div class="required">
-                <label id="emailLabel" for="email">Email: </label>
-                <input id="email" name="email" type="text" />
+            <div class="input-group col-lg-4 col-lg-offset-4">
+                <span class="input-group-addon">Email:</span>
+                <input id="email" type="email" class="form-control" name="email" placeholder="me@something.com">
             </div>
+
             <br/>
             
-            <div class="required">
-                <label id="phoneLabel" for="phone">Phone: </label>
-                <input id="phone" name="phone" type="text" />
+            <div class="input-group col-lg-4 col-lg-offset-4">
+                <span class="input-group-addon">Phone:</span>
+                <input id="phone" type="phone" class="form-control" name="phone" placeholder="(xxx) 123-4567">
             </div>
+            
             <br/>
 
-            <div class="required">
-                <label id="reasonLabel" for="Reason">Reason for Inquiry</label>
-                <select name="Reason">
-                    <option value="Cetering">Catering</option>
+            <div class="input-group col-lg-4 col-lg-offset-4">
+                <span class="input-group-addon">Reason for Inquiry</span>
+                <select class="form-control" id="Reason">
+                    <option value="Catering">Catering</option>
                     <option value="Private Party">Private Party</option>
                     <option value="feedback">Feedback</option>
                     <option value="Other">Other</option>
                 </select>
             </div>
+
             <br/>
 
-            <div>
-                <label id="addlInfoLabel" for="addlInfo">Additional Information: </label>
-                <textarea name="addlInfo"></textarea><br/>
+            <div class="input-group col-lg-4 col-lg-offset-4">
+                <span class="input-group-addon">Additional Information</span>
+                <textarea class="form-control" name="addlInfo"></textarea><br/>
             </div>
+
             <br/>
 
             <div class="required">
@@ -97,6 +102,7 @@
                 <input type="radio" name="returnCustomer" value="No" checked/>No
                 <input type="radio" name="returnCustomer" value="Yes"       />Yes
             </div>
+
             <br/>
 
             <div class="required">
@@ -117,12 +123,24 @@
             <br/>
             
         </form>
+        </div>
     </body>
 
     <footer>
+        <!--
         <hr/>
             Lobster Trap Road, Kittery Point, Maine 03905<br/>
             (207) 123-4567 
         <hr/>
+        -->
+        <div class="page-footer">
+        <div class="container">
+  		    <div class="row-fluid, text-center">
+                <br/>
+                Lobster Trap Road, Kittery Point, Maine 03905<br/>
+                (207) 123-4567 
+      	    </div>
+  	    </div>
+    </div>
     </footer>
 </html>
